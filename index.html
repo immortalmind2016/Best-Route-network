@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>network routing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="./style.css">
+  <style>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+</head>
+<body  oncontextmenu="return false;">
+    <script src="voice.js">
+ 
+      </script>
+        <script src="number_to_english.js">
+ 
+          </script>
+ <div class="container" style="padding-top: 50px">
+   <div class="row">
+     <div id="router-area" class="col-9 ">
+     
+          
+     </div>
+     <div class="col-3">
+       <div class="widget mb-3">
+         <div class="widget__header text-center mb-3">
+           Create router
+         </div>
+         <div class="widget_form ">
+           <div class="form-group">
+             <input id="name" type="text" class="form-control" placeholder="router name..">
+           </div>
+           <button id="add" class="btn btn-primary w-100">add</button>
+         </div>
+       </div>
+
+       <div class="widget mb-3">
+          <div class="widget__header text-center mb-3">
+            dijkstra algorithm
+          </div>
+          <div class="widget_form ">
+            <button style="cursor: pointer" id="dijkstra-start" class="btn btn-success w-100">Start</button>
+          </div>
+        </div>
+
+     
+
+          <div class="widget mb-3">
+            <div class="widget__header text-center mb-3">
+                Bellman Ford algorithm
+            </div>
+            <div class="widget_form ">
+              <button style="cursor: pointer" id="BellmanFord-start" class="btn btn-success w-100">Start</button>
+            </div>
+          </div>
+      
+          <div class="widget mb-3">
+              <div class="widget__header text-center mb-3">
+                INSTRUCTIONS
+              </div>
+              <ol >
+                <li>
+                    <p>click on router</p>
+                </li>
+                <li>
+                    <p>click on second router to make link to 1st and add cost</p>
+                </li>
+                <li>
+                    <p>to delete router press right click on mouse</p>
+                </li>
+              </ol>
+           
+              
+           
+              
+
+            </div>
+
+      </div>
+   </div>
+ </div>
+
+
+
+ <script>
+    //ALGORITHM
+    var graph = new Array(10);
+
+    for (var i = 0; i < 10; i++) {
+      graph[i] = new Array(10);
+    }
+    for (var i = 0; i < 10; i++) {
+      for(var j=0;j<10;j++)
+      graph[i][j] = 0
+    }
+  
+    </script>
+
+<script src="our_drag_drop.js">
+ 
+  </script>
+<script src="algorithms.js">
+ 
+  </script>
+  <div id="static"></div>
+  <script>
+  </script>
+<!--<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+-->
+ 
+</body>
+</html>

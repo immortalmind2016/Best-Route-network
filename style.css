@@ -1,0 +1,35 @@
+
+  .line {
+ 
+    height: 3px;
+    background-color: #aaa;
+    transform-origin: left center;
+    position: absolute;
+    
+  }
+  .widget{
+    padding: 10px;
+    box-shadow: 0px 0px 5px #b7b7b7;
+    border-radius: 16px;
+  }
+  .widget__header{
+    
+  }
+  #router-area{
+      position: relative;
+  }
+  .draggable{
+      z-index:99;
+      width: fit-content;
+      position: absolute
+      ;
+  }
+  .table{
+      position: absolute;
+      font-size: 10px;
+      font-weight:100;
+    
+  }
+  .table td, .table th{
+      padding: 10px;
+  }
