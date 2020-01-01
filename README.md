@@ -1,8 +1,8 @@
-#install
+#install#
 - python 3
 - flask
 - flask_cors
-#run 
+#run#
     - open project directory
     - type python app.py
 
